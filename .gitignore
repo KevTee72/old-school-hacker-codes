@@ -1,0 +1,4 @@
+repo-meta.txt
+__pycache__/
+*.pyc
+*.wav
