@@ -1,0 +1,485 @@
+{
+  "checked": "2026-11-24",
+  "categories": {
+    "phreaking": "Phone phreaking",
+    "modems": "Modems and war dialing",
+    "unix": "Unix, Linux and terminal secrets",
+    "memory": "Hexspeak and magic numbers",
+    "phones": "Mobile phone codes",
+    "games": "Cheat codes",
+    "windows": "Windows secrets",
+    "search": "Search operators",
+    "lore": "Texts, groups and history",
+    "jargon": "Jargon File slang"
+  },
+  "entries": [
+    {
+      "id": "2600hz",
+      "category": "phreaking",
+      "code": "2600 Hz",
+      "title": "The 2600 Hz tone",
+      "what": "A pure tone that AT&T long distance trunks used to signal an idle line. Playing it down a call let phreakers take control of the trunk and then send routing tones of their own. Modern networks keep signaling out of band, so the trick no longer works.",
+      "era": "1960s to 1970s",
+      "sources": ["https://en.wikipedia.org/wiki/Blue_box"]
+    },
+    {
+      "id": "captain-crunch",
+      "category": "phreaking",
+      "code": "Cap'n Crunch whistle",
+      "title": "Cap'n Crunch whistle",
+      "what": "A toy whistle packed in Cap'n Crunch cereal boxes made a 2600 Hz tone when one hole was covered. John Draper took the handle Captain Crunch from it. The blind phreaker Joe Engressia had found the tone earlier by whistling it himself.",
+      "era": "early 1970s",
+      "sources": ["https://en.wikipedia.org/wiki/John_Draper", "https://en.wikipedia.org/wiki/Blue_box"]
+    },
+    {
+      "id": "blue-box",
+      "category": "phreaking",
+      "code": "Blue box",
+      "title": "The blue box",
+      "what": "An electronic generator for 2600 Hz plus the routing tones. AT&T security seized its first one around 1962, so the idea was already old by the time the press found it.",
+      "era": "1960s to 1980s",
+      "sources": ["https://en.wikipedia.org/wiki/Blue_box"]
+    },
+    {
+      "id": "esquire-1971",
+      "category": "phreaking",
+      "code": "Esquire, October 1971",
+      "title": "Secrets of the Little Blue Box",
+      "what": "Ron Rosenbaum's magazine article that took phreaking to the general public. Steve Jobs and Steve Wozniak both read it, and it is often cited as an influence on them.",
+      "era": "1971",
+      "sources": ["https://en.wikipedia.org/wiki/Blue_box"]
+    },
+    {
+      "id": "dtmf",
+      "category": "phreaking",
+      "code": "697 770 852 941 Hz rows, 1209 1336 1477 1633 Hz columns",
+      "title": "Touch tone (DTMF) keypad",
+      "what": "Every key on a phone pad is two sine waves played together, one for its row and one for its column. The fourth column holds the A B C D keys that most phones never had. dtmf.py in this repo writes and decodes them.",
+      "era": "1960s onward",
+      "sources": ["https://en.wikipedia.org/wiki/Dual-tone_multi-frequency_signaling"]
+    },
+    {
+      "id": "war-dialer",
+      "category": "modems",
+      "code": "Demon dialer and war dialer",
+      "title": "War dialing",
+      "what": "A program that calls a list or range of numbers and logs the ones that answer with modem handshake tones. The Jargon File says war dialers evolved from earlier demon dialers that just kept redialing one number.",
+      "era": "1980s to 1990s",
+      "sources": ["https://stuff.mit.edu/afs/sipb.mit.edu/user/marc/stuff.athena/jargon/jarg400.txt", "https://en.wikipedia.org/wiki/Demon_dialing"]
+    },
+    {
+      "id": "wargames",
+      "category": "modems",
+      "code": "WarGames (1983)",
+      "title": "WarGames",
+      "what": "The film that put dialing numbers in bulk to find computers into popular culture, and the name war dialing is tied to it. The practice was older and went by demon dialing before the film.",
+      "era": "1983",
+      "sources": ["https://en.wikipedia.org/wiki/WarGames", "https://en.wikipedia.org/wiki/Demon_dialing"]
+    },
+    {
+      "id": "hayes",
+      "category": "modems",
+      "code": "AT",
+      "title": "The Hayes Smartmodem command set",
+      "what": "Dennis Hayes and Dale Heatherington built it for the 300 baud Hayes Smartmodem in 1981. Every command starts with AT, short for attention, so the modem knows a command is coming.",
+      "era": "1981",
+      "sources": ["https://en.wikipedia.org/wiki/Hayes_AT_command_set"]
+    },
+    {
+      "id": "atdt",
+      "category": "modems",
+      "code": "ATDT5550199",
+      "title": "Dial a number",
+      "what": "D is dial and T is tone dialing. ATDP does the same with pulse dialing for old rotary lines.",
+      "era": "1980s to 1990s",
+      "sources": ["https://en.wikipedia.org/wiki/Hayes_AT_command_set"]
+    },
+    {
+      "id": "ath",
+      "category": "modems",
+      "code": "ATH0",
+      "title": "Hang up",
+      "what": "Puts the modem back on hook, which ends the call. ATH1 takes the line off hook.",
+      "era": "1980s to 1990s",
+      "sources": ["https://en.wikipedia.org/wiki/Hayes_AT_command_set"]
+    },
+    {
+      "id": "atz",
+      "category": "modems",
+      "code": "ATZ",
+      "title": "Reset the modem",
+      "what": "Loads the stored default profile. Wait about two seconds before sending the next command.",
+      "era": "1980s to 1990s",
+      "sources": ["https://en.wikipedia.org/wiki/Hayes_AT_command_set"]
+    },
+    {
+      "id": "sysrq",
+      "category": "unix",
+      "code": "Alt + SysRq + R E I S U B",
+      "title": "Magic SysRq rescue sequence",
+      "what": "The Linux kernel answers the SysRq key even when the desktop is frozen. In order, r takes the keyboard back from the display server, e asks every process to exit, i kills the rest, s syncs disks, u remounts them read only and b reboots. The b reboots instantly, which is why s and u come first. Only use it on a machine that is really hung.",
+      "era": "Linux",
+      "sources": ["https://docs.kernel.org/admin-guide/sysrq.html"]
+    },
+    {
+      "id": "apt-moo",
+      "category": "unix",
+      "code": "apt-get moo",
+      "title": "Super Cow Powers",
+      "what": "Prints an ASCII cow that asks whether you have mooed today. apt-get help also admits that this APT has Super Cow Powers.",
+      "era": "Debian",
+      "sources": ["https://www.digitalocean.com/community/tutorials/top-10-linux-easter-eggs"]
+    },
+    {
+      "id": "aptitude-moo",
+      "category": "unix",
+      "code": "aptitude -vvvvv moo",
+      "title": "The aptitude denial ladder",
+      "what": "Plain aptitude moo denies there are any easter eggs. Each extra v makes it more exasperated, and at five it gives in.",
+      "era": "Debian",
+      "sources": ["https://nesbitt.io/2026/04/03/package-manager-easter-eggs"]
+    },
+    {
+      "id": "package-cows",
+      "category": "unix",
+      "code": "emerge --moo and zypper moo",
+      "title": "Cows in other package managers",
+      "what": "Gentoo's emerge draws Larry the Cow. openSUSE's zypper draws a hedgehog by default.",
+      "era": "Linux",
+      "sources": ["https://nesbitt.io/2026/04/03/package-manager-easter-eggs"]
+    },
+    {
+      "id": "towel",
+      "category": "unix",
+      "code": "telnet towel.blinkenlights.nl",
+      "title": "Star Wars in ASCII over telnet",
+      "what": "Plays Star Wars Episode IV as ASCII frames in your terminal. The server answered on port 23 when this repo was written on 2026-11-24, so it still runs. Windows needs the Telnet Client feature switched on first.",
+      "era": "2000s",
+      "sources": ["https://www.tomsguide.com/how-to/how-to-watch-star-wars-in-ascii-on-windows-10", "https://www.physicsforums.com/threads/ascii-starwars-enjoy-the-classic-movie-on-telnet-towel-blinkenlights-nl.116684"]
+    },
+    {
+      "id": "emacs-doctor",
+      "category": "unix",
+      "code": "M-x doctor",
+      "title": "The Emacs therapist",
+      "what": "A chatbot psychotherapist that ships inside Emacs, in the tradition of ELIZA.",
+      "era": "1980s onward",
+      "sources": ["https://www.gnu.org/software/emacs/manual/html_node/emacs/Amusements.html", "https://en.wikipedia.org/wiki/ELIZA"]
+    },
+    {
+      "id": "xyzzy",
+      "category": "unix",
+      "code": "xyzzy",
+      "title": "The canonical magic word",
+      "what": "From Colossal Cave Adventure. Typed at the right spot in the cave it moves you between two distant places. The Jargon File uses it as the word to shout when something works by magic, and lists plugh as its sibling.",
+      "era": "1970s",
+      "sources": ["https://en.wikipedia.org/wiki/Xyzzy_(computing)", "https://stuff.mit.edu/afs/sipb.mit.edu/user/marc/stuff.athena/jargon/jarg400.txt"]
+    },
+    {
+      "id": "deadbeef",
+      "category": "memory",
+      "code": "0xDEADBEEF",
+      "title": "DEADBEEF",
+      "what": "Marks memory that is allocated but not yet initialized, so it jumps out of a dump. Solaris uses it for freed kernel memory. IBM RS/6000, 32 bit PowerPC Mac OS and the Commodore Amiga used it as a debug value.",
+      "era": "1980s onward",
+      "sources": ["https://en.wikipedia.org/wiki/Hexspeak"]
+    },
+    {
+      "id": "cafebabe",
+      "category": "memory",
+      "code": "0xCAFEBABE",
+      "title": "CAFEBABE",
+      "what": "The first four bytes of every Java class file, and of Mach-O universal binaries. The popular explanation is a coffee joke, although the 1996 newsgroup answer about it was only a guess.",
+      "era": "1990s",
+      "sources": ["https://en.wikipedia.org/wiki/Hexspeak", "https://www.artima.com/insidejvm/whyCAFEBABE.html"]
+    },
+    {
+      "id": "fee1dead",
+      "category": "memory",
+      "code": "0xFEE1DEAD",
+      "title": "FEE1DEAD",
+      "what": "A magic number the Linux reboot system call expects, so a stray call cannot restart the machine by accident. Read it aloud as feel dead.",
+      "era": "Linux",
+      "sources": ["https://en.wikipedia.org/wiki/Hexspeak"]
+    },
+    {
+      "id": "1badb002",
+      "category": "memory",
+      "code": "0x1BADB002",
+      "title": "1BADB002",
+      "what": "The magic value in the Multiboot header that boot loaders look for in a kernel image.",
+      "era": "Linux and GRUB",
+      "sources": ["https://en.wikipedia.org/wiki/Hexspeak"]
+    },
+    {
+      "id": "imei",
+      "category": "phones",
+      "code": "*#06#",
+      "title": "Show the IMEI",
+      "what": "Displays the 15 digit IMEI hardware ID on most GSM phones. It is a general GSM code and not specific to Nokia.",
+      "era": "1990s onward",
+      "sources": ["https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity"]
+    },
+    {
+      "id": "nokia-version",
+      "category": "phones",
+      "code": "*#0000#",
+      "title": "Nokia software version",
+      "what": "Shows the software version on many Nokia models. Nokia never documented these codes officially, so what works depends on the model and firmware.",
+      "era": "1990s to 2000s",
+      "sources": ["https://news.softpedia.com/news/10-Nokia-Secret-Codes-193581.shtml"]
+    },
+    {
+      "id": "nokia-service",
+      "category": "phones",
+      "code": "*#92702689#",
+      "title": "Nokia service info",
+      "what": "A service information screen on some Nokia models. Fan lists disagree on exactly what it shows, so treat it as folklore and expect it to vary by model.",
+      "era": "1990s to 2000s",
+      "sources": ["https://news.softpedia.com/news/10-Nokia-Secret-Codes-193581.shtml"]
+    },
+    {
+      "id": "konami",
+      "category": "games",
+      "code": "Up Up Down Down Left Right Left Right B A",
+      "title": "The Konami Code",
+      "what": "Kazuhisa Hashimoto added it while porting Gradius to the NES in 1986 to make the game easier to test and play. In Gradius it hands you the full power up set. He meant to remove it before release, and then it shipped and became the most famous cheat ever.",
+      "era": "1986",
+      "sources": ["https://en.wikipedia.org/wiki/Konami_Code", "https://en.wikipedia.org/wiki/Kazuhisa_Hashimoto","https://www.npr.org/2020/02/26/809622331/kazuhisa-hashimoto-creator-of-famous-konami-code-gaming-cheat-dies"]
+    },
+    {
+      "id": "contra-30",
+      "category": "games",
+      "code": "Konami Code on the Contra title screen",
+      "title": "The 30 lives code",
+      "what": "The same sequence in the 1988 NES version of Contra gave 30 lives. It is the use most people remember, and the reason the code is also called the Contra Code.",
+      "era": "1988",
+      "sources": ["https://en.wikipedia.org/wiki/Konami_Code"]
+    },
+    {
+      "id": "iddqd",
+      "category": "games",
+      "code": "IDDQD",
+      "title": "Doom god mode",
+      "what": "Makes the player immune to damage, the classic god mode of the 1990s.",
+      "era": "1993",
+      "sources": ["https://mirrors.lug.mtu.edu/idgames/docs/rgcd-pips/cheats"]
+    },
+    {
+      "id": "idkfa",
+      "category": "games",
+      "code": "IDKFA",
+      "title": "Doom all weapons",
+      "what": "Gives maximum ammo, armor and weapons. Its sibling IDFA does the same but leaves out the colored keys.",
+      "era": "1993",
+      "sources": ["https://mirrors.lug.mtu.edu/idgames/docs/rgcd-pips/cheats"]
+    },
+    {
+      "id": "idspispopd",
+      "category": "games",
+      "code": "IDSPISPOPD",
+      "title": "Doom walk through walls",
+      "what": "Walk through walls in the original Doom, which the cheat lists call zero clipping. Doom II replaced it with the plainer IDCLIP.",
+      "era": "1993",
+      "sources": ["https://mirrors.lug.mtu.edu/idgames/docs/rgcd-pips/cheats"]
+    },
+    {
+      "id": "godmode",
+      "category": "windows",
+      "code": "GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}",
+      "title": "Windows God Mode folder",
+      "what": "Name a new folder like this and Explorer turns it into one long list of roughly 250 settings and Control Panel tasks. Pressing Win+R and running shell:::{ED7BA470-8E54-465E-825C-99712043E01C} opens the same view. GodMode is only a nickname and the label before the dot can be anything.",
+      "era": "Windows 7 onward",
+      "sources": ["https://learn.microsoft.com/en-us/archive/blogs/deploymentguys/windows-7-godmode-and-other-folder-shortcuts"]
+    },
+    {
+      "id": "google-dorks",
+      "category": "search",
+      "code": "intitle: inurl: filetype: site:",
+      "title": "Google dorks",
+      "what": "Johnny Long started collecting clever Google queries as googleDorks in December 2002, and the Google Hacking Database formally began in 2004. He passed it to Offensive Security in 2010 and it now lives on at Exploit-DB. Today it is mainly a defensive habit, used to check what your own site leaks.",
+      "era": "2002 to 2010",
+      "sources": ["https://en.wikipedia.org/wiki/Google_hacking"]
+    },
+    {
+      "id": "manifesto",
+      "category": "lore",
+      "code": "The Conscience of a Hacker",
+      "title": "The Hacker Manifesto",
+      "what": "Written by Loyd Blankenship as The Mentor on 8 January 1986 and published in Phrack volume 1 issue 7. It is the best known text of hacker culture, and it is short enough to read in five minutes.",
+      "era": "1986",
+      "sources": ["http://www.phrack.org/archives/issues/7/3.txt", "https://en.wikipedia.org/wiki/Hacker_Manifesto"]
+    },
+    {
+      "id": "phrack",
+      "category": "lore",
+      "code": "Phrack",
+      "title": "Phrack",
+      "what": "The underground ezine of the mid 1980s that carried the Hacker Manifesto and Phrack's own history of the Legion of Doom. It is still published.",
+      "era": "1985 onward",
+      "sources": ["https://en.wikipedia.org/wiki/Phrack", "https://phrack.org/issues/31/5"]
+    },
+    {
+      "id": "2600-magazine",
+      "category": "lore",
+      "code": "2600: The Hacker Quarterly",
+      "title": "2600 magazine",
+      "what": "Print magazine named after the phreaking tone. Its editor writes as Emmanuel Goldstein, a name borrowed from Orwell's 1984. The real name is Eric Corley.",
+      "era": "1984 onward",
+      "sources": ["https://en.wikipedia.org/wiki/2600:_The_Hacker_Quarterly"]
+    },
+    {
+      "id": "lod",
+      "category": "lore",
+      "code": "Legion of Doom",
+      "title": "Legion of Doom",
+      "what": "An early US hacking group. Phrack's own history dates it from 1984 and says the name came from the Super Friends cartoon.",
+      "era": "1984 to 1990",
+      "sources": ["https://archives.phrack.org/issues/31/5.txt", "https://en.wikipedia.org/wiki/Legion_of_Doom_(hacking)"]
+    },
+    {
+      "id": "mod",
+      "category": "lore",
+      "code": "Masters of Deception",
+      "title": "Masters of Deception",
+      "what": "A New York group that split off from the Legion of Doom. The so called Great Hacker War between the two is disputed, and Phiber Optik later called it a complete fabrication.",
+      "era": "late 1980s",
+      "sources": ["https://en.wikipedia.org/wiki/Masters_of_Deception", "https://en.wikipedia.org/wiki/Great_Hacker_War"]
+    },
+    {
+      "id": "ccc",
+      "category": "lore",
+      "code": "Chaos Computer Club",
+      "title": "Chaos Computer Club",
+      "what": "The German hacker club, usually named next to the Legion of Doom as one of the first hacking groups.",
+      "era": "1980s onward",
+      "sources": ["https://en.wikipedia.org/wiki/Chaos_Computer_Club"]
+    },
+    {
+      "id": "morris-worm",
+      "category": "lore",
+      "code": "Morris worm, 2 November 1988",
+      "title": "The Morris worm",
+      "what": "One of the oldest internet worms and the first to get major press. It hit around 6,000 of roughly 60,000 connected machines. A flaw in its self check let it reinfect machines until they crawled. It led to the first felony conviction under the 1986 Computer Fraud and Abuse Act and to the first CERT.",
+      "era": "1988",
+      "sources": ["https://en.wikipedia.org/wiki/Morris_worm", "https://st.llnl.gov/news/look-back/1988-morris-worm-internets-first-cyberattack"]
+    },
+    {
+      "id": "jargon-file",
+      "category": "lore",
+      "code": "The Jargon File",
+      "title": "The Jargon File",
+      "what": "A dictionary of hacker slang that began at Stanford in 1975 and grew out of the AI lab and PDP-10 communities. It became the book The Hacker's Dictionary in 1983, then Eric Raymond's New Hacker's Dictionary in 1991.",
+      "era": "1975 onward",
+      "sources": ["https://en.wikipedia.org/wiki/Jargon_File", "https://stuff.mit.edu/afs/sipb.mit.edu/user/marc/stuff.athena/jargon/jarg400.txt"]
+    },
+    {
+      "id": "leet",
+      "category": "lore",
+      "code": "1337 5p34k",
+      "title": "Leetspeak",
+      "what": "Swapping letters for look alike digits and symbols, a habit of the BBS and IRC crowd. leet.py in this repo converts text at three levels.",
+      "era": "1980s to 2000s",
+      "sources": ["https://en.wikipedia.org/wiki/Leet"]
+    },
+    {
+      "id": "foo",
+      "category": "jargon",
+      "code": "foo",
+      "title": "foo",
+      "what": "The first of the standard metasyntactic variables, followed by bar, baz, qux and quux. Also a sample name for any program or scratch file.",
+      "era": "Jargon File",
+      "sources": ["https://stuff.mit.edu/afs/sipb.mit.edu/user/marc/stuff.athena/jargon/jarg400.txt"]
+    },
+    {
+      "id": "frob",
+      "category": "jargon",
+      "code": "frob",
+      "title": "frob",
+      "what": "From the MIT Tech Model Railroad Club, where it meant a protruding arm. By extension any small random object, and as a verb to fiddle with something.",
+      "era": "Jargon File",
+      "sources": ["https://stuff.mit.edu/afs/sipb.mit.edu/user/marc/stuff.athena/jargon/jarg400.txt"]
+    },
+    {
+      "id": "mung",
+      "category": "jargon",
+      "code": "mung",
+      "title": "mung",
+      "what": "To change a file in big, irreversible ways, or to destroy it by accident. Early on it was said to stand for Mash Until No Good, later recast as the recursive Mung Until No Good.",
+      "era": "Jargon File",
+      "sources": ["https://stuff.mit.edu/afs/sipb.mit.edu/user/marc/stuff.athena/jargon/jarg400.txt"]
+    },
+    {
+      "id": "kluge",
+      "category": "jargon",
+      "code": "kluge",
+      "title": "kluge",
+      "what": "A clever but ugly fix that solves a nasty case in a hurry. It leans on the German word klug, meaning clever.",
+      "era": "Jargon File",
+      "sources": ["https://stuff.mit.edu/afs/sipb.mit.edu/user/marc/stuff.athena/jargon/jarg400.txt"]
+    },
+    {
+      "id": "boxen",
+      "category": "jargon",
+      "code": "VAXen and boxen",
+      "title": "VAXen and boxen",
+      "what": "Fanciful plurals by analogy with ox and oxen. VAXen came first for VAX computers, then boxen for commodity Unix machines that are all interchangeable.",
+      "era": "Jargon File",
+      "sources": ["https://stuff.mit.edu/afs/sipb.mit.edu/user/marc/stuff.athena/jargon/jarg400.txt"]
+    },
+    {
+      "id": "wedged",
+      "category": "jargon",
+      "code": "wedged",
+      "title": "wedged",
+      "what": "Stuck and unable to make progress without help, which is different from crashed. A wedged system is still trying to do something.",
+      "era": "Jargon File",
+      "sources": ["https://stuff.mit.edu/afs/sipb.mit.edu/user/marc/stuff.athena/jargon/jarg400.txt"]
+    },
+    {
+      "id": "heisenbug",
+      "category": "jargon",
+      "code": "Heisenbug",
+      "title": "Heisenbug",
+      "what": "A bug that vanishes or changes behavior when you try to probe it, named after Heisenberg's uncertainty principle. Running a debugger can be enough to hide it.",
+      "era": "Jargon File",
+      "sources": ["https://stuff.mit.edu/afs/sipb.mit.edu/user/marc/stuff.athena/jargon/jarg400.txt"]
+    },
+    {
+      "id": "bit-rot",
+      "category": "jargon",
+      "code": "bit rot",
+      "title": "bit rot",
+      "what": "The joke theory that unused programs stop working over time even though nothing changed, as if the bits were radioactive.",
+      "era": "Jargon File",
+      "sources": ["https://stuff.mit.edu/afs/sipb.mit.edu/user/marc/stuff.athena/jargon/jarg400.txt"]
+    },
+    {
+      "id": "smoke-test",
+      "category": "jargon",
+      "code": "smoke test",
+      "title": "smoke test",
+      "what": "Power the hardware on and watch for smoke. Later stretched to mean the first run of new software after a big change.",
+      "era": "Jargon File",
+      "sources": ["https://stuff.mit.edu/afs/sipb.mit.edu/user/marc/stuff.athena/jargon/jarg400.txt"]
+    },
+    {
+      "id": "grok",
+      "category": "jargon",
+      "code": "grok",
+      "title": "grok",
+      "what": "From Heinlein's novel Stranger in a Strange Land. To understand something completely and in a global sense.",
+      "era": "Jargon File",
+      "sources": ["https://stuff.mit.edu/afs/sipb.mit.edu/user/marc/stuff.athena/jargon/jarg400.txt"]
+    },
+    {
+      "id": "cruft",
+      "category": "jargon",
+      "code": "cruft",
+      "title": "cruft",
+      "what": "Unpleasant buildup, and in code the redundant or superseded leftovers nobody dares delete. The Tech Model Railroad Club dictionary noted that attacking it with a broom only makes more.",
+      "era": "Jargon File",
+      "sources": ["https://stuff.mit.edu/afs/sipb.mit.edu/user/marc/stuff.athena/jargon/jarg400.txt"]
+    }
+  ]
+}
