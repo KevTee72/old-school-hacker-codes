@@ -1,6 +1,6 @@
-# Retro Hacker Toys
+# Retro Hacker Scripts
 
-A small pile of Python scripts for anyone who remembers dial up, IRC, release NFO files and BIOS screens that counted your RAM out loud. Seven toys, zero dependencies, and not one of them does anything dangerous.
+A small pile of Python scripts for anyone who remembers dial up, IRC, release NFO files and BIOS screens that counted your RAM out loud. Seven small programs, zero dependencies, and not one of them does anything dangerous.
 
 Inspired by the "based on a true story" energy of [NARKOZ/hacker-scripts](https://github.com/NARKOZ/hacker-scripts), which is worth a read if you have not seen it.
 
@@ -21,8 +21,8 @@ Inspired by the "based on a true story" energy of [NARKOZ/hacker-scripts](https:
 You need Python 3.8 or newer. Nothing to install.
 
 ```bash
-git clone https://github.com/KevTee72/retro-hacker-toys.git
-cd retro-hacker-toys
+git clone https://github.com/KevTee72/retro-hacker-scripts.git
+cd retro-hacker-scripts
 python matrix.py
 ```
 
@@ -112,7 +112,7 @@ Nothing in this repo scans, attacks, intercepts or changes anything on another m
 
 ## Contributing
 
-Pull requests with more retro toys are welcome. Keep them standard library only and keep them harmless. Ideas: a fake dial up modem handshake, a BBS menu, an IRC chat log generator, a defrag screen with blocks that fill in.
+Pull requests with more retro scripts are welcome. Keep them standard library only and keep them harmless. Ideas: a fake dial up modem handshake, a BBS menu, an IRC chat log generator, a defrag screen with blocks that fill in.
 
 ## License
 

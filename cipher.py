@@ -8,7 +8,7 @@
     python cipher.py vigenere -k LEMON "attack at dawn"
     python cipher.py brute "khoor zruog"
 
-These are toys. None of them protect anything.
+These are puzzle book ciphers. None of them protect anything.
 """
 import argparse
 import sys
